@@ -7,8 +7,6 @@
     <fullyQualifiedTypeName name="com.zavala.dao.ClienteDao"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
-    <fullyQualifiedTypeName name="com.zavala.domain.Persistente"/>
-    <fullyQualifiedTypeName name="com.zavala.dao.generics.IGenericDAO"/>
     <fullyQualifiedTypeName name="com.zavala.dao.generics.GenericDAO"/>
     <fullyQualifiedTypeName name="com.zavala.services.IProdutoService"/>
     <fullyQualifiedTypeName name="com.zavala.test.ProdutoServiceTest"/>
@@ -17,8 +15,22 @@
     <fullyQualifiedTypeName name="com.zavala.domain.Produto"/>
     <fullyQualifiedTypeName name="com.zavala.test.ProdutoDaoTest"/>
     <fullyQualifiedTypeName name="com.zavala.test.dao.ProdutoDaoMock"/>
+    <fullyQualifiedTypeName name="com.zavala.domain.Persistente"/>
+    <fullyQualifiedTypeName name="com.zavala.dao.generics.IGenericDAO"/>
+    <fullyQualifiedTypeName name="com.zavala.dao.NotaFiscalDetDao"/>
+    <fullyQualifiedTypeName name="com.zavala.services.INotaFiscalCabService"/>
+    <fullyQualifiedTypeName name="com.zavala.dao.INotaFiscalCabDao"/>
+    <fullyQualifiedTypeName name="com.zavala.test.dao.NotaFiscalCabDaoMock"/>
+    <fullyQualifiedTypeName name="com.zavala.services.NotaFiscalCabService"/>
     <fullyQualifiedTypeName name="org.junit.Before"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.zavala.domain.NotaFiscalCab"/>
     <fullyQualifiedTypeName name="com.zavala.exception.TipoChaveNaoEncontradaException"/>
     <fullyQualifiedTypeName name="org.junit.Test"/>
     <fullyQualifiedTypeName name="org.junit.Assert"/>
+    <fullyQualifiedTypeName name="com.zavala.test.dao.NotaFiscalDetDaoMock"/>
+    <fullyQualifiedTypeName name="com.zavala.domain.NotaFiscalDet"/>
+    <fullyQualifiedTypeName name="com.zavala.services.INotaFiscalDetService"/>
+    <fullyQualifiedTypeName name="com.zavala.dao.INotaFiscalDetDao"/>
+    <fullyQualifiedTypeName name="com.zavala.services.NotaFiscalDetService"/>
 </qualifiedTypeNameHistroy>
