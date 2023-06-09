@@ -1,0 +1,41 @@
+package com.zavala.test.dao;
+
+import java.util.Collection;
+
+import com.zavala.dao.INotaFiscalDetDao;
+import com.zavala.domain.NotaFiscalDet;
+import com.zavala.exception.TipoChaveNaoEncontradaException;
+
+public class NotaFiscalDetDaoMock implements INotaFiscalDetDao {
+
+	@Override
+	public Boolean cadastrar(NotaFiscalDet entity) throws TipoChaveNaoEncontradaException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean excluir(Long valor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void alterar(NotaFiscalDet entity) throws TipoChaveNaoEncontradaException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public NotaFiscalDet consultar(Long valor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Collection<NotaFiscalDet> buscarTodos() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

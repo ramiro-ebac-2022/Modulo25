@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.zavala.domain.Cliente"/>
+    <fullyQualifiedTypeName name="com.zavala.dao.IClienteDao"/>
+    <fullyQualifiedTypeName name="com.zavala.test.ClienteDaoTest"/>
+    <fullyQualifiedTypeName name="com.zavala.test.dao.ClienteDaoMock"/>
+    <fullyQualifiedTypeName name="com.zavala.dao.ClienteDao"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="com.zavala.domain.Persistente"/>
+    <fullyQualifiedTypeName name="com.zavala.dao.generics.IGenericDAO"/>
+    <fullyQualifiedTypeName name="com.zavala.dao.generics.GenericDAO"/>
+    <fullyQualifiedTypeName name="com.zavala.services.IProdutoService"/>
+    <fullyQualifiedTypeName name="com.zavala.test.ProdutoServiceTest"/>
+    <fullyQualifiedTypeName name="com.zavala.services.ProdutoService"/>
+    <fullyQualifiedTypeName name="com.zavala.dao.IProdutoDao"/>
+    <fullyQualifiedTypeName name="com.zavala.domain.Produto"/>
+    <fullyQualifiedTypeName name="com.zavala.test.ProdutoDaoTest"/>
+    <fullyQualifiedTypeName name="com.zavala.test.dao.ProdutoDaoMock"/>
+    <fullyQualifiedTypeName name="org.junit.Before"/>
+    <fullyQualifiedTypeName name="com.zavala.exception.TipoChaveNaoEncontradaException"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="org.junit.Assert"/>
+</qualifiedTypeNameHistroy>

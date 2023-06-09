@@ -1,0 +1,36 @@
+package com.zavala.services;
+
+import com.zavala.dao.INotaFiscalDetDao;
+import com.zavala.domain.NotaFiscalDet;
+import com.zavala.exception.TipoChaveNaoEncontradaException;
+
+public class NotaFiscalDetService implements INotaFiscalDetService{
+
+	private INotaFiscalDetDao notaFiscalDetDao;
+	
+	public NotaFiscalDetService(INotaFiscalDetDao notaFiscalDetDao) {
+		this.notaFiscalDetDao = notaFiscalDetDao;
+	}
+	
+	@Override
+	public Boolean salvar(NotaFiscalDet notaFiscalDet) throws TipoChaveNaoEncontradaException {
+		return notaFiscalDetDao.cadastrar(notaFiscalDet);
+	}
+
+	@Override
+	public NotaFiscalDet buscarPorCodigo(Long numeroNF) {
+		return notaFiscalDetDao.consultar(numeroNF);
+	}
+
+	@Override
+	public Boolean excluir(Long numeroNF) {
+		return notaFiscalDetDao.excluir(numeroNF);
+	}
+
+	@Override
+	public void alterar(NotaFiscalDet notaFiscalDet) throws TipoChaveNaoEncontradaException {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

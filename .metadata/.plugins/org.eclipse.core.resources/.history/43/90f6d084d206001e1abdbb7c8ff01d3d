@@ -1,0 +1,62 @@
+package com.zavala.test;
+
+import java.util.Date;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.zavala.dao.INotaFiscalCabDao;
+import com.zavala.dao.INotaFiscalDetDao;
+import com.zavala.domain.NotaFiscalCab;
+import com.zavala.domain.NotaFiscalDet;
+import com.zavala.exception.TipoChaveNaoEncontradaException;
+import com.zavala.test.dao.NotaFiscalCabDaoMock;
+import com.zavala.test.dao.NotaFiscalDetDaoMock;
+
+public class NotaFiscalDetDaoTest {
+
+	private INotaFiscalDetDao notaFiscalDetDao;
+	private NotaFiscalDet notaFiscalDet;
+	
+	public NotaFiscalDetDaoTest() {
+		notaFiscalDetDao = new NotaFiscalDetDaoMock();
+	}
+	
+	@Before
+	public void init() throws TipoChaveNaoEncontradaException {
+		notaFiscalDet = new NotaFiscalDet();
+		notaFiscalDet.setCodigoProdutoINF(987);
+		notaFiscalDet.setNumeroNF(111L);
+		notaFiscalDet.setQuantidadeINF(12);
+		notaFiscalDet.setSequencialINF(1L);
+		notaFiscalDet.setValorINF(2.5);
+		notaFiscalDetDao.cadastrar(notaFiscalDet);
+	}
+	
+	@Test
+	public void pesquisarNotaFiscal() {
+		NotaFiscalDet notaFiscalDetPesquisado = notaFiscalDetDao.consultar(notaFiscalDet.getNumeroNF());
+		Assert.assertNotNull(notaFiscalDetPesquisado);
+	}
+	
+	@Test
+	public void salvaNotaFiscal() throws TipoChaveNaoEncontradaException {
+		Boolean retorno = notaFiscalDetDao.cadastrar(notaFiscalDet);
+		Assert.assertTrue(retorno);
+	}
+	
+	@Test
+	public void excluirNotaFiscal() {
+		Boolean retorno = notaFiscalDetDao.excluir(notaFiscalDet.getNumeroNF());
+		Assert.assertTrue(retorno);
+	}
+	
+	@Test
+	public void alterarNotaFiscal() throws TipoChaveNaoEncontradaException {
+		notaFiscalDet.setSequencialINF(2L);
+		notaFiscalDetDao.alterar(notaFiscalDet);
+		Assert.assertEquals(2L, (Long)notaFiscalDet.getSequencialINF());
+	}
+	
+}

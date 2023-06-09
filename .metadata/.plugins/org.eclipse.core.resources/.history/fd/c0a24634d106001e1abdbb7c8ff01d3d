@@ -1,0 +1,35 @@
+package com.zavala.test;
+
+import java.util.Date;
+
+import org.junit.Before;
+
+import com.zavala.dao.INotaFiscalCabDao;
+import com.zavala.dao.INotaFiscalDetDao;
+import com.zavala.domain.NotaFiscalCab;
+import com.zavala.domain.NotaFiscalDet;
+import com.zavala.exception.TipoChaveNaoEncontradaException;
+import com.zavala.test.dao.NotaFiscalCabDaoMock;
+import com.zavala.test.dao.NotaFiscalDetDaoMock;
+
+public class NotaFiscalDetDaoTest {
+
+	private INotaFiscalDetDao notaFiscalDetDao;
+	private NotaFiscalDet notaFiscalDet;
+	
+	public NotaFiscalDetDaoTest() {
+		notaFiscalDetDao = new NotaFiscalDetDaoMock();
+	}
+	
+	@Before
+	public void init() throws TipoChaveNaoEncontradaException {
+		notaFiscalDet = new NotaFiscalDet();
+		notaFiscalDet.setCodigoProdutoINF(987);
+		notaFiscalDet.setNumeroNF(111L);
+		notaFiscalDet.setQuantidadeINF(12);
+		notaFiscalDet.setSequencialINF(1L);
+		notaFiscalDet.setValorINF(2.5);
+		notaFiscalDetDao.cadastrar(notaFiscalDet);
+	}
+	
+}

@@ -1,0 +1,16 @@
+package com.zavala.services;
+
+import com.zavala.domain.NotaFiscalCab;
+import com.zavala.domain.Produto;
+import com.zavala.exception.TipoChaveNaoEncontradaException;
+
+public interface INotaFiscalCabService {
+
+	Boolean salvar(NotaFiscalCab notaFiscalCab) throws TipoChaveNaoEncontradaException ;
+
+	Produto buscarPorCodigo(Long codigo);
+
+	Boolean excluir(Long codigo);
+
+	void alterar(NotaFiscalCab notaFiscalCab) throws TipoChaveNaoEncontradaException ;
+}

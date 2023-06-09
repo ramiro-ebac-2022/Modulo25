@@ -1,0 +1,22 @@
+package com.zavala.services;
+
+import com.zavala.dao.IClienteDao;
+import com.zavala.domain.Cliente;
+
+public class ClienteService implements IClienteService {
+
+	private IClienteDao clienteDao;
+	
+	@Override
+	public void salvar(Cliente cliente) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Cliente buscarPorCpf(Long cpf) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

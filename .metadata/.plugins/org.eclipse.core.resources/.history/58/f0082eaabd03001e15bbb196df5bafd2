@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package com.zavala.domain;
+
+/**
+ * @author Ramiro
+ *
+ */
+public class Cliente {
+
+	private String nome;
+	private Long cpf;
+	private Long tel;
+	private String end;
+	private Integer numeroEnd;
+	private String cidade;
+	private String estado;
+
+	public Long getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(Long cpf) {
+		this.cpf = cpf;
+	}
+	
+
+}

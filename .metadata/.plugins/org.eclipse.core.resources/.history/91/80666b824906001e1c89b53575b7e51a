@@ -1,0 +1,41 @@
+package com.zavala.test.dao;
+
+import java.util.Collection;
+
+import com.zavala.dao.IProdutoDao;
+import com.zavala.domain.Produto;
+import com.zavala.exception.TipoChaveNaoEncontradaException;
+
+public class ProdutoDaoMock implements IProdutoDao {
+
+	@Override
+	public Boolean cadastrar(Produto entity) throws TipoChaveNaoEncontradaException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void excluir(Long valor) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void alterar(Produto entity) throws TipoChaveNaoEncontradaException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Produto consultar(Long valor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Collection<Produto> buscarTodos() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

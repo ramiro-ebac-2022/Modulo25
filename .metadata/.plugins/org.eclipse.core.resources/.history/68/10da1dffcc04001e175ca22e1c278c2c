@@ -1,0 +1,11 @@
+package com.zavala.dao;
+
+import com.zavala.domain.Cliente;
+
+public interface IClienteDao {
+
+	void salvar(Cliente cliente);
+	
+	Cliente buscarPorCpf(Long cpf);
+
+}

@@ -1,0 +1,11 @@
+package com.zavala.test;
+
+import com.zavala.domain.Cliente;
+import com.zavala.services.IClienteService;
+
+public class ProdutoServiceTest {
+
+	private IProdutoService produtoService;
+	private Produto produto;
+	
+}

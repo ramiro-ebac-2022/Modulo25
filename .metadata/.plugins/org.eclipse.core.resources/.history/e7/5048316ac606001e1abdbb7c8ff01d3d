@@ -1,0 +1,40 @@
+package com.zavala.test.dao;
+
+import java.util.Collection;
+
+import com.zavala.dao.INotaFiscalCabDao;
+import com.zavala.domain.NotaFiscalCab;
+import com.zavala.exception.TipoChaveNaoEncontradaException;
+
+public class NotaFiscalCabDaoMock implements INotaFiscalCabDao{
+
+	@Override
+	public Boolean cadastrar(NotaFiscalCab entity) throws TipoChaveNaoEncontradaException {
+		return true;
+	}
+
+	@Override
+	public Boolean excluir(Long valor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void alterar(NotaFiscalCab entity) throws TipoChaveNaoEncontradaException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public NotaFiscalCab consultar(Long valor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Collection<NotaFiscalCab> buscarTodos() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

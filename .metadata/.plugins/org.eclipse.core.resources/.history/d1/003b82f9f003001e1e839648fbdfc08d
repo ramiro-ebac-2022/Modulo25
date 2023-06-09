@@ -1,0 +1,14 @@
+package com.zavala.test.dao;
+
+import com.zavala.dao.IClienteDao;
+import com.zavala.domain.Cliente;
+
+public class ClienteDaoMock implements IClienteDao {
+
+	@Override
+	public void salvar(Cliente cliente) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

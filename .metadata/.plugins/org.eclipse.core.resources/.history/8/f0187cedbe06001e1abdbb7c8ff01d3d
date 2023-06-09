@@ -1,0 +1,23 @@
+package com.zavala.dao;
+
+import com.zavala.dao.generics.GenericDAO;
+import com.zavala.domain.NotaFiscalDet;
+
+public class NotaFiscalDetDao extends GenericDAO<NotaFiscalDet> implements INotaFiscalDetDao {
+
+	public NotaFiscalDetDao() {
+		super();
+	}
+	
+	@Override
+	public Class<NotaFiscalDet> getTipoClasse() {
+		return NotaFiscalDetDao.class;
+	}
+
+	@Override
+	public void atualiarDados(NotaFiscalDet entity, NotaFiscalDet entityCadastrado) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

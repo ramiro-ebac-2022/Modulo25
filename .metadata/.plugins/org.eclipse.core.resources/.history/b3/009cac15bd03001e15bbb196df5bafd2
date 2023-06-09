@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package com.zavala.domain;
+
+/**
+ * @author Ramiro
+ *
+ */
+public class Cliente {
+
+	public void setCpf(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

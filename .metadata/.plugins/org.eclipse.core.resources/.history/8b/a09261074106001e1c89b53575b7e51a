@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.zavala.domain;
+
+/**
+ * @author Ramiro
+ *
+ */
+public class Produto {
+
+}

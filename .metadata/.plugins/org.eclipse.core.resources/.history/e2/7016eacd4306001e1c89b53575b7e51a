@@ -1,0 +1,20 @@
+package com.zavala.dao;
+
+import com.zavala.dao.generics.GenericDAO;
+import com.zavala.domain.Produto;
+
+public class ProdutoDao extends GenericDAO<Produto> implements IProdutoDao{
+
+	@Override
+	public Class<Produto> getTipoClasse() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void atualiarDados(Produto entity, Produto entityCadastrado) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

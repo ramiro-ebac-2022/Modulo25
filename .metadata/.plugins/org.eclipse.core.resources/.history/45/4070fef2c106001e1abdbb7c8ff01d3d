@@ -1,0 +1,33 @@
+package com.zavala.services;
+
+import com.zavala.domain.NotaFiscalCab;
+import com.zavala.domain.Produto;
+import com.zavala.exception.TipoChaveNaoEncontradaException;
+
+public class NotaFiscalCabService implements INotaFiscalCabService {
+
+	@Override
+	public Boolean salvar(NotaFiscalCab notaFiscalCab) throws TipoChaveNaoEncontradaException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Produto buscarPorCodigo(Long numeroNF) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean excluir(Long numeroNF) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void alterar(NotaFiscalCab notaFiscalCab) throws TipoChaveNaoEncontradaException {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

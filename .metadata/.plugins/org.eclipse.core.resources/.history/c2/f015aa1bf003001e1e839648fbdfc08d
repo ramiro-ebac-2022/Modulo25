@@ -1,0 +1,44 @@
+/**
+ * 
+ */
+package com.zavala.test;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import com.zavala.domain.Cliente;
+import com.zavala.services.ClienteService;
+import com.zavala.services.IClienteService;
+
+/**
+ * @author Ramiro
+ * Sistema para simular uma venda : Nota Fiscal , Cliente , Produto.
+ * Camada de banco : padrão FACADE : IClienteService
+ *
+ */
+public class ClienteTest {
+
+	private IClienteService clienteService;
+	
+	public ClienteTest() {
+		IClienteDao = new ClienteDaoMock();
+		clienteService = new ClienteService();
+	}
+	
+	@Test
+	public void pesquisarCliente() {
+		Cliente cliente = new Cliente();
+		cliente.setCpf(12345678901L);
+		cliente.setNome("Ramiro");
+		cliente.setCidade("Recife");
+		cliente.setEstado("Pernambuco");
+		cliente.setEnd("Boa Viagem");
+		cliente.setNumeroEnd(561);
+		cliente.setTel(81989264848L);
+		
+		clienteService.salvar(cliente);
+		
+		Cliente clienteConsultado = clienteService.buscarPorCpf(cliente.getCpf());
+		Assert.assertNotNull(clienteConsultado);
+	}
+}

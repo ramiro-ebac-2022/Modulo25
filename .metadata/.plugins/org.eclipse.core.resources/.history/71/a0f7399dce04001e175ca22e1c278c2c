@@ -1,0 +1,11 @@
+package com.zavala.services;
+
+import com.zavala.domain.Cliente;
+
+public interface IClienteService {
+
+	Boolean salvar(Cliente cliente);
+
+	Cliente buscarPorCpf(Long cpf);
+
+}

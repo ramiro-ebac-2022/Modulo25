@@ -1,0 +1,17 @@
+package com.zavala.test;
+
+import com.zavala.dao.INotaFiscalCabDao;
+import com.zavala.domain.NotaFiscalCab;
+import com.zavala.test.dao.NotaFiscalCabDaoMock;
+
+public class NotaFiscalCabDaoTest {
+
+	private INotaFiscalCabDao notaFiscalCabDao;
+	private NotaFiscalCab notaFiscalCab;
+	
+	public NotaFiscalCabDaoTest() {
+		notaFiscalCabDao = new NotaFiscalCabDaoMock();
+	}
+	
+	
+}

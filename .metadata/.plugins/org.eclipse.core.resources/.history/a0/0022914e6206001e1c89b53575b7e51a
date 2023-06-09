@@ -1,0 +1,15 @@
+package com.zavala.test;
+
+import com.zavala.dao.IProdutoDao;
+import com.zavala.domain.Produto;
+import com.zavala.test.dao.ProdutoDaoMock;
+
+public class ProdutoDaoTest {
+
+	private IProdutoDao produtoDao;
+	private Produto produto;
+	
+	public ProdutoDaoTest() {
+		produtoDao = new ProdutoDaoMock();
+	}
+}

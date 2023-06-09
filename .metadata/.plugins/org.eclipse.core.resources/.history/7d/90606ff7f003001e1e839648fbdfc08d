@@ -1,0 +1,11 @@
+package com.zavala.dao;
+
+import com.zavala.domain.Cliente;
+
+public class ClienteDao implements IClienteDao {
+
+	@Override
+	public void salvar(Cliente cliente) {
+	}
+
+}

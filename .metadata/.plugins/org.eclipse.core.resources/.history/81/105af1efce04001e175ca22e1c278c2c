@@ -1,0 +1,21 @@
+package com.zavala.test.dao;
+
+import com.zavala.dao.IClienteDao;
+import com.zavala.domain.Cliente;
+
+public class ClienteDaoMock implements IClienteDao {
+
+	@Override
+	public Boolean salvar(Cliente cliente) {
+		return true;
+		
+	}
+
+	@Override
+	public Cliente buscarPorCpf(Long cpf) {
+		Cliente cliente = new Cliente();
+		cliente.setCpf(cpf);
+		return cliente;
+	}
+
+}

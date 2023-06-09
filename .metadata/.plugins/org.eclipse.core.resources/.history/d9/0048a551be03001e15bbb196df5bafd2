@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+package com.zavala.test;
+
+import org.junit.Test;
+
+import com.zavala.domain.Cliente;
+
+/**
+ * @author Ramiro
+ * Sistema para simular uma venda : Nota Fiscal , Cliente , Produto.
+ *
+ */
+public class ClienteTest {
+
+	@Test
+	public void pesquisarCliente() {
+		Cliente cliente = new Cliente();
+		cliente.setCpf(12345678901L);
+		cliente.setNome("Ramiro");
+		cliente.setCidade("Recife");
+		cliente.setEstado("Pernambuco");
+		cliente.setEnd("Boa Viagem");
+		cliente.setNumeroEnd(561);
+		cliente.setTel(81989264848L);
+		
+		
+	}
+}

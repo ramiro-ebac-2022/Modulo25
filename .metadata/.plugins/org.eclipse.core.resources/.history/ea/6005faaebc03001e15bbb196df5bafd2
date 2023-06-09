@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package com.zavala.test;
+
+import org.junit.Test;
+
+/**
+ * @author Ramiro
+ * Sistema para simular uma venda : Nota Fiscal , Cliente , Produto.
+ *
+ */
+public class ClienteTest {
+
+	@Test
+	public void pesquisarCliente() {
+		
+	}
+}

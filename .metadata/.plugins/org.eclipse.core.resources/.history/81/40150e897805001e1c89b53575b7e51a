@@ -1,0 +1,10 @@
+package com.zavala.dao;
+
+import com.zavala.dao.generics.GenericDAO;
+import com.zavala.domain.Cliente;
+
+public class ClienteDao extends GenericDAO<cliente> implements IClienteDao {
+
+	
+
+}

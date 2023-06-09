@@ -1,0 +1,21 @@
+package com.zavala.dao;
+
+import com.zavala.dao.generics.GenericDAO;
+import com.zavala.domain.Cliente;
+
+public class ClienteDao extends GenericDAO<Cliente> implements IClienteDao {
+
+	@Override
+	public Class<Cliente> getTipoClasse() {
+		// TODO Auto-generated method stub
+		return Cliente.class;
+	}
+
+	@Override
+	public void atualiarDados(Cliente entity, Cliente entityCadastrado) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}

@@ -1,0 +1,39 @@
+package com.zavala.services;
+
+import com.zavala.dao.IProdutoDao;
+import com.zavala.domain.Produto;
+import com.zavala.exception.TipoChaveNaoEncontradaException;
+
+public class ProdutoService implements IProdutoService{
+
+	private IProdutoDao produtoDao;
+	
+	public ProdutoService(IProdutoDao produtoDao) {
+		this.produtoDao = produtoDao;
+	}
+	
+	@Override
+	public Boolean salvar(Produto produto) throws TipoChaveNaoEncontradaException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Produto buscarPorCodigo(Long codigo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void excluir(Long codigo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void alterar(Produto produto) throws TipoChaveNaoEncontradaException {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
